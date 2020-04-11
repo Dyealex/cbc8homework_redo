@@ -1,16 +1,28 @@
 // The Grocery Store Array...
 
+
+
+// groceryInventory.forEach (function (item, quantity) {
+//     console.log(item, quantity)
+// })
+
+
 var groceryInventory =[
-    ['Peanut Butter', 3],
-    ['Bananas', 5],
-    ['Yogurt', 6],
-    ['Ground Beef', 8]
-    ['Toilet Paper', 10]
-    ['Paper Towels', 12]
-    ['Special Treats for the Cats', 4]
-    ['Dogfood', 2]
-    ['Zucchini', 7]
-    ['Apple', 10]
-    ['Chicken Tenders', 4]
+    {item:'Peanut Butter', quantity:3},
+    {item:'Bananas', quantity:5},
+    {item:'Yogurt', quantity:6},
+    {item:'Ground Beef', quantity:8},
+    {item:'Toilet Paper', quantity:10},
+    {item:'Paper Towels', quantity:12},
+    {item:'Treats for the Cats', quantity:4},
+    {item:'Dogfood', quantity:3},
+    {item:'Zucchini', quantity:7},
+    {item:'Apples', quantity:10},
+    {item:'Chicken Tenders', quantity:10},
 ];
-console.log(groceryInventory)
+
+
+groceryInventory.push({item: "Bread", quantity:4}, {item: "Raisins", quantity:5}, {item: "Apples", quantity:5})
+   
+
+ console.log("Toilet Paper".toUpperCase())
