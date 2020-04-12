@@ -1,0 +1,49 @@
+<!-- Week Two Faker Exercise -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faker Exercise</title>
+   </script>
+</head>
+<body>
+    <h3>Week Two Exercise Using Faker</h3>
+
+
+
+
+
+    <script type="text/javascript" src="C:\users\Diane Alexander\node_modules\faker\lib\fake.js">
+
+
+var faker = require('faker');
+var fs = require('fs');
+var str = "";
+
+for (var i=0;i<10;i++) {
+
+  str += faker.name.firstName() + '\t' + faker.name.lastName() + '\t' + faker.internet.email() + '\t' + faker.name.jobTitle() + '\t' + faker.random.locale() +"\r\n";
+}
+
+
+fs.writeFile('c:/test.txt',str,function(err) { 
+  if(err) return console.log(err); else console.log('file saved')
+});
+
+// var faker =  require('/.faker.js');
+// var fs = require('fs')
+
+// var fakeFolks = {}
+// var key = 'names';
+// fakeFolks[key] = [];
+
+// for (var fakeFolks=10; fakeFolks>0; fakeFolks++)
+// var people = {
+//     fname: faker.name.firstName()
+// }
+console.log(faker.name.findName())
+</script>
+</body>
+</html>
