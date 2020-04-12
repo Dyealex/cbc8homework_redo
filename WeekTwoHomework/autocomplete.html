@@ -1,0 +1,45 @@
+<!-- autocomplete exercise Using internal JS-->
+<!-- HTML boiler plate -->
+
+
+<!DOCTYPE html>
+
+<head>
+<!--Meta Data goes here-->
+<title>Icecream Flavors</title>
+</head>
+<html>
+<body>
+<h2>The Icecream Flavor Autocomplete Test</h2>
+<br>
+<p>What is your favorite icecream flavor?</p>
+<br>
+<form id = "flavorForm" autocomplete ="on">
+<input list = "flavorChoice" id = "userFlavorChoice" type="text" name = "flavors" list="flavorForm" placeholder="Icecream Flavor">
+<input type="text" id = "userChoice" onclick="updateInput()" value="Choose One">
+</form>
+<datalist id = "flavorChoice" visibility = "hidden">
+<option value="chocolate"></option>
+    <option value="Strawberry"></option>
+        <option value="Vanilla"></option>
+            <option value="neopolitan"></option>
+                <option value="Cookies and Cream"></option>
+                    <option value ="Chocolate Mint"></option>
+                    <option value="Rocky Road"></option>
+</datalist>               
+
+
+<br>
+
+<p>You chose <span id = "userInput"></span></p>
+<script>
+function updateInput () {
+    var tryThis = document.getElementById("userFlavorChoice").value;
+    document.getElementById("userInput").innerHTML = tryThis;
+}
+
+console.log("Why won't this work?")
+</script>
+<!-- Getting somewhere now. The choice now appears but will not remain in the span I had the input button as submit instead of text. It works now...what 20-30 hours later????-->
+</body>
+</html>
